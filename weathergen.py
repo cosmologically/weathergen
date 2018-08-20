@@ -24,13 +24,13 @@ while not biome[i] == "0":
 
 	
 #global variables for twitter keys 
-#CONSUMER_KEY = '...'  
-#CONSUMER_SECRET = '...'
-#ACCESS_KEY = '...'
-#ACCESS_SECRET = '...'
-#auth = tweepy.0AuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-#auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
-#api = tweepy.API(auth)
+CONSUMER_KEY = '...'  
+CONSUMER_SECRET = '...'
+ACCESS_KEY = '...'
+ACCESS_SECRET = '...'
+auth = tweepy.0AuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+api = tweepy.API(auth)
 
 	
 #iterate through list of biomes, concatenate randomized descriptions together
@@ -40,9 +40,9 @@ while i > 0:
 		rand_desc = random.choice(descriptor)
 		rand_state = random.choice(state)
 		statuscat = statuscat + biome[i] + rand_desc + rand_state + "\n" 
-	print(statuscat) #for debugging on console
-	#api.update_status(status=statuscat)
+	#print(statuscat) #for debugging on console
+	api.update_status(status=statuscat) #i don't actually know if this works yet as of 8/19
 	statuscat = "■■TODAY'S WEATHER:■■\n"
-	time.sleep(5) # tweet every 24 hours = 86400 sec. use 5 sec for console debugging
+	time.sleep(86400) # tweet every 24 hours = 86400 sec. use 5 sec for console debugging
 	
 	
