@@ -10,7 +10,7 @@ Generates weather descriptions for fictional environments and tweets them. Can b
 ### Basic setup
 Download all included files. 
 
-Open weathergen.py in a text editor and update lines 20 and 25 with the full path to the .txt files.
+Open weathergen.py in a text editor and update lines 19 and 24 with the full path to the .txt files.
 
 Update lines 36-39 with your twitter dev keys.
 
