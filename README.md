@@ -18,7 +18,7 @@ Update lines 36-39 with your twitter dev keys.
 
 ### More info
 
-This is a pretty basic Python generator, which uses tweepy to interface with twitter. It draws from several different sets of data in text files to generate strings. The RNG is EXTREMELY basic - rather than using any statistics functions to calculate probabilities from homogenous datasets, the probabilities are determined by how many times an entry is literally repeated in a set. To see what I mean, open up THE STATES FILE and use Ctrl+F to see how many times "rain" pops up versus "haboob". Don't ask me how I wrote those text files...it's embarrassing.
+This is a pretty basic Python generator, which uses tweepy to interface with twitter. It draws from several different sets of data in text files to generate strings. The RNG is EXTREMELY basic - rather than using any statistics functions to calculate probabilities from homogenous datasets, the probabilities are determined by how many times an entry is literally repeated in a set. To see what I mean, open up the "states" file and use Ctrl+F to see how many times "rain" pops up versus "haboob". Don't ask me how I wrote those text files...it's embarrassing.
 
 FUN CODING LESSON: This method of generation is pretty primitive and likely to be looked down upon by people who call themselves Coding Masters. That's largely because it's not efficient with memory usage (see the note about how probabilities are determined above). This works for what it was made for because we're working with pretty tiny data sets, on a script that runs once per day in a pretty low-key environment.
 
