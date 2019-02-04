@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 #Description: Generates weather descriptions for fictional environments and tweets them.
-#Written for @ark_forecast on twitter.
 #Author: Per Wolf
 #Date: 08/19/2018
 #Contact: per.c.wolf@gmail.com
@@ -12,8 +11,8 @@ import tweepy, time, random
 #initializing variables 
 available = 0 
 i = 0
-statuscat = "■■TODAY'S WEATHER:■■\n"
-biome = ["Sea of Nectar: ", "Sea of Tranquility: ", "Sea of Crises: ", "0"]
+statuscat = "TODAY'S WEATHER:\n"
+biome = ["Biome 1: ", "Biome 2: ", "Biome 3: ", "0"]
 
 
 descriptor = []
@@ -54,7 +53,7 @@ while i > 0:
 		statuscat = statuscat + biome[i] + rand_desc + rand_state + "\n" 
 	print(statuscat) #for debugging on console
 	api.update_status(statuscat)
-	statuscat = "■■TODAY'S WEATHER:■■\n"
+	statuscat = "TODAY'S WEATHER:\n"
 	time.sleep(86400) # tweet every 24 hours = 86400 sec. use 5 sec for console debugging
 	
 	
