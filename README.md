@@ -1,5 +1,5 @@
 ## weathergen.py
-Generates weather descriptions for fictional environments and tweets them. Weather generator written for @ark_forecast on twitter, part of the Aldebaran Sea roleplay group. Can be repurposed for any other randomizer which uses lists to generate results, and then tweet them.
+Generates weather descriptions for fictional environments and tweets them. Can be repurposed for any other randomizer which uses lists to generate results, and then tweet them.
 
 ### Requirements
   - [Python 2.7](https://www.python.org/downloads/release/python-2710/)
